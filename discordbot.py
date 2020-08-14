@@ -189,7 +189,7 @@ def check(author): # メッセージを検知
 async def help(ctx):
     msg = '主なコマンドの説明 - 1\n'\
           'サブコマンドの説明 - 2'
-    
+    embed = discord.Embed(title="コマンド一覧",description=msg)
     editmsg = await ctx.send(embed=embed)
     while True:
           try:
